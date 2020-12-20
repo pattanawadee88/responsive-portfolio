@@ -1,0 +1,141 @@
+body {
+    background-color: #F0EAD2;
+    color: #ff206e;
+    font-family: 'Roboto Mono',Georgia, Helvetica, sans-serif;    
+    margin: 0;
+    padding: 0; 
+}
+header{
+    background-color: #ff206e;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    margin-bottom: 3em;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 1em;  
+}
+nav{
+    margin-left: 0;
+ }
+nav li {
+    padding: 0 2em;
+}
+nav a{
+    color: white;
+    text-decoration: none; 
+    padding-bottom: 0.5em;  
+}
+nav a:hover{
+    border-bottom: 3px solid black;
+}
+img{
+    width: 100%;
+    
+}
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin:12em auto;
+    text-align: center;
+}
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-me-container{
+    display: flex;
+}
+.about-me-content{
+    text-align: left;
+    margin-left: 3em;
+    width: 70%;
+}
+.about-me-photo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+@media (max-width:850px){
+    .about-me-container{
+        flex-direction: column;
+    }
+    .about-me-photo{
+        width: 90%;
+        margin: auto;
+    }
+    .about-me-content{
+        text-align: center;
+        margin: auto;
+    }
+}
+.icon-image{
+    width: 5%;
+    margin-bottom: 1.125em;
+}
+.main-content{
+    align-items: center; 
+}
+.content{
+    margin: 3em;
+}
+
+button{
+    background-color: #ff206e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 1em 2em;
+    display: block;
+    margin: auto;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 1em 2em;
+    
+}
+
+
+/* =================
+typography
+================== */
+h1{
+    color: #226f54; 
+    font-size: 3rem;
+    font-family: Georgia, Helvetica, sans-serif;
+}
+p{
+    font-size: 1rem;
+}
+@media(max-width:800px){    
+    .container-flex{
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav{
+       margin-left: 0; 
+    }
+    nav ul {
+        flex-direction: column;
+        padding-left: 0; 
+    }
+    nav li{
+        padding:  .5em 0;
+    }
+       
+} 
+
+@media (max-width:450px){
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+
