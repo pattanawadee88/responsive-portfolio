@@ -1,15 +1,20 @@
+
 body {
     background-color: #F0EAD2;
     color: #ff206e;
     font-family: 'Roboto Mono',Georgia, Helvetica, sans-serif;    
-    margin: 0;
+    margin: 0px;
     padding: 0; 
+    margin: 0 auto;
+    
 }
 header{
     background-color: #ff206e;
+    top: 0;
+    right: 0;
     width: 100%;
     padding: 1em;
-    margin: 0;
+    margin-right: 0;
     margin-bottom: 3em;
 }
 nav ul{
@@ -18,11 +23,11 @@ nav ul{
     justify-content: center;
     padding-left: 1em;  
 }
-nav{
-    margin-left: 0;
- }
+
 nav li {
     padding: 0 2em;
+    overflow: hidden;
+    text-align: center;
 }
 nav a{
     color: white;
@@ -36,8 +41,20 @@ img{
     width: 100%;
     
 }
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    padding: 1em 1em;
+}
+.work-content{
+    padding: 3em 5em;
+}
+.footer-content{
+    text-align: center;
+}
 .container{
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
     margin:12em auto;
     text-align: center;
@@ -60,7 +77,7 @@ img{
     display: flex;
     align-items: center;
 }
-@media (max-width:850px){
+@media screen and (max-width:850px) {
     .about-me-container{
         flex-direction: column;
     }
@@ -84,22 +101,16 @@ img{
     margin: 3em;
 }
 
-button{
+#contact-me-btn{
     background-color: #ff206e;
     color: white;
     border: none;
     border-radius: 20px;
+    box-shadow:6px 6px 25px 2px black;
     padding: 1em 2em;
     display: block;
     margin: auto;
 }
-footer{
-    width: 100%;
-    background-color: black;
-    padding: 1em 2em;
-    
-}
-
 
 /* =================
 typography
@@ -112,21 +123,18 @@ h1{
 p{
     font-size: 1rem;
 }
-@media(max-width:800px){    
+@media screen and (max-width:800px){    
     .container-flex{
         flex-direction: row;
         justify-content: center;
     }
-    nav{
-       margin-left: 0; 
-    }
     nav ul {
-        flex-direction: column;
-        padding-left: 0; 
+        flex-direction: column; 
     }
     nav li{
-        padding:  .5em 0;
+        padding:  .5em 0;  
     }    
+   
 } 
 
 @media (max-width:450px){
@@ -136,5 +144,21 @@ p{
     h1{
         font-size: 2em;
     }
+    .icon-image{
+        width: 10%;
+    }
+}
+.pop-up-contact-form{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 320px;
+    margin-top: -37em;
+    margin-left: 5em;
+    padding: 6em;
+    position: absolute;
+    display: none;
 }
 
+form{
+    width: 100%;
+}
