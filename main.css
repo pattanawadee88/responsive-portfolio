@@ -3,7 +3,7 @@ body {
     background-color: #F0EAD2;
     color: #ff206e;
     font-family: 'Roboto Mono',Georgia, Helvetica, sans-serif;    
-    margin: 0px;
+    margin: 0;
     padding: 0; 
     margin: 0 auto;
     
@@ -38,8 +38,10 @@ nav a:hover{
     border-bottom: 3px solid black;
 }
 img{
-    width: 100%;
-    
+    width: 100%;   
+}
+.icon-image:hover{
+    transform: scale(1.2,1.2);
 }
 footer{
     width: 100%;
@@ -47,11 +49,16 @@ footer{
     background-color: black;
     padding: 1em 1em;
 }
-.work-content{
-    padding: 3em 5em;
+.project-content-main{
+    display: flex;
 }
+.project-content-secondary{
+    margin: 0 2em;   
+}
+
 .footer-content{
     text-align: center;
+    font-size: 0.5rem;
 }
 .container{
     width: 100%;
@@ -70,6 +77,7 @@ footer{
 .about-me-content{
     text-align: left;
     margin-left: 3em;
+    margin-bottom: 5em;
     width: 70%;
 }
 .about-me-photo{
@@ -77,18 +85,34 @@ footer{
     display: flex;
     align-items: center;
 }
-@media screen and (max-width:850px) {
+@media screen and (max-width:700px) {
     .about-me-container{
         flex-direction: column;
+        margin: 2em;
     }
     .about-me-photo{
         width: 90%;
         margin: auto;
     }
     .about-me-content{
-        text-align: center;
+        text-align: left;
+        max-width: 450px;
         margin: auto;
     }
+    .container-flex{
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction: column; 
+    }
+    nav li{
+        padding:  .5em 0;  
+    } 
+    .project-content-main{
+        flex-direction: column;  
+        margin: 2em;
+    }  
 }
 .icon-image{
     width: 5%;
@@ -96,6 +120,7 @@ footer{
 }
 .main-content{
     align-items: center; 
+   
 }
 .content{
     margin: 3em;
@@ -117,13 +142,14 @@ typography
 ================== */
 h1{
     color: #226f54; 
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Georgia, Helvetica, sans-serif;
 }
+
 p{
     font-size: 1rem;
 }
-@media screen and (max-width:800px){    
+/* @media screen and (max-width:800px){    
     .container-flex{
         flex-direction: row;
         justify-content: center;
@@ -133,9 +159,12 @@ p{
     }
     nav li{
         padding:  .5em 0;  
-    }    
+    } 
+    .project-content-main{
+        flex-direction: column;  
+    }   
    
-} 
+}  */
 
 @media (max-width:450px){
     p{
@@ -147,6 +176,7 @@ p{
     .icon-image{
         width: 10%;
     }
+    
 }
 .pop-up-contact-form{
     background-color: rgba(0, 0, 0, 0.9);
@@ -161,4 +191,7 @@ p{
 
 form{
     width: 100%;
+}
+.skills{
+    text-align: right;
 }

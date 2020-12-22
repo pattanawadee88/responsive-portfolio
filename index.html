@@ -10,12 +10,12 @@
 </head>
 <body>
     <header>
-        <div class="container-flex"> 
+        <div class="container-flex" id="home-section"> 
           <nav>
             <ul>
               <li><a href="#home-section">Home </a></li>
               <li><a href="#about-me-section">About</a></li>
-              <li><a href="#work-section">Works</a></li>
+              <li><a href="#project-section">Projects</a></li>
               <li><a target="_blank" href="resume.html">Resume</a></li>
             </ul>
           </nav>
@@ -25,10 +25,10 @@
     <div class="container">
       <div class="main-content">
         <h1>Pattanawadee</h1>
-        <p>software Engineering &amp; Frontend Developer</p>
-        <a href="#"><img src="icons/icon-linkedin.svg" alt="Linkedin" class="icon-image"></a>
-        <a href="#"><img src="icons/icon-github.svg" alt="Github" class="icon-image"></a>
-        <a href="#"><img src="icons/icon-angellist.svg" alt="Angellist" class="icon-image"></a>
+        <p>Software Engineering &amp; Frontend Developer</p>
+        <a href="https://www.linkedin.com/in/pattanawadeewinyarat/"><img src="icons/icon-linkedin.svg" alt="Linkedin" class="icon-image"></a>
+        <a href="https://github.com/pattanawadee88"><img src="icons/icon-github.svg" alt="Github" class="icon-image"></a>
+        <a href="https://angel.co/u/pattanawadee-winyarat"><img src="icons/icon-angellist.svg" alt="Angellist" class="icon-image"></a>
         <button id="contact-me-btn" type="button">Contact me</button>
       </div>
     </div>
@@ -51,7 +51,7 @@
       </form>
     </div> -->
 
-    <div class="container">
+    <div class="container" id="about-me-section">
       <article class="about-me-container">
         <div class="about-me-photo">
           <img src="imag/myphoto.JPG" alt="myphoto">
@@ -59,42 +59,48 @@
         
         <div class="about-me-content">
           <h1>Hi there, <br> I'm Pat.</h1>
-          <p>Enthusiastic aspiring web developer eager to contribute to team success through hard work, attention to detail, and excellent organizational skills.</p>
           <p>I am recent bachelor's degree recipient in computer engineering.</p> 
+          <p>Enthusiastic aspiring frontend developer eager to contribute to team success through hard work, attention to detail, and excellent organizational skills.</p>
+            <div class="skills">
+              <h1>Skills</h1>
+              <p>HTML5/CSS</p>
+            </div>
         </div>
+        
       </article>
     </div>
     
-    <div class="container">
-      <article class="work-content">
-        <h1>Works</h1>
-        <p> <strong>Placeholder:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    </article>
+    <div class="container" id="project-section">
+      <h1>Projects</h1>
+        <article class="project-content-main">
+          <div class="project-content-secondary">
+            <h2>Project1</h2>
+            <a href="#"><img src="imag/thegallery.png" alt=""></a>
+            
+          </div>
+          <div class="project-content-secondary">
+            <h2>Project2</h2>
+            <a href="#"><img src="imag/thegallery.png" alt=""></a>
+      
+          </div>
+          
+        </article>
     </div>
 
    
     <footer>
       <div class="footer-content">
-        <h2>Let's get in touch!</h2>
+        <p>Let's get in touch!</p>
         <p>Gmail: pattanawadee.yu@gmail.com</p>
         <p>Tel: 617-981-5439</p>
         <p>Designed & Built by Pattanawadee Winyarat</p>
       </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js "></script>  
     <script src="app.js"></script>
-    <script>
-      AOS.init({
-        offset: 100,
-        duration: 1000,
-        once: false,
-        mirror: false,
-
-      });
       
-    </script>     
 
 
 </body>
