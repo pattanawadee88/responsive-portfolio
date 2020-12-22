@@ -6,7 +6,7 @@
     <title>Pattanawadee</title>
 
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 </head>
 <body>
     <header>
@@ -22,6 +22,23 @@
         </div>
     </header>
 
+    <div class="pop-up-contact-form">
+      <form action="https://formspree.io/f/xgepparl" method="POST" id="my-form">
+        <h1>Contact me!</h1>
+          <div class="contact-form-container">
+            <label for="Fname">From:</label><br>
+            <input type="text" class="input-area" name="email" placeholder="name@example.com" required ><br>
+            <label for="Sname">Subject:</label><br>
+            <input type="text" class="input-area" name="subject" required><br>
+            <label for="Sname">Message:</label><br>
+            <textarea name="message" class="input-area" cols="30" rows="10" required></textarea>
+            <p id="my-form-status"></p>
+            <input type="submit" id="my-form-button" value="Submit">
+            <button id="close-btn" type="button">Close</button>
+          </div>  
+      </form>
+    </div>
+    
     <div class="container">
       <div class="main-content">
         <h1>Pattanawadee</h1>
@@ -31,25 +48,10 @@
         <a href="https://angel.co/u/pattanawadee-winyarat"><img src="icons/icon-angellist.svg" alt="Angellist" class="icon-image"></a>
         <button id="contact-me-btn" type="button">Contact me</button>
       </div>
+      
     </div>
     
-    <!-- <div class="container pop-up-contact-form">
-      <form id="contact-form">
-        <div>
-          <label for="Fname">From:</label><br>
-          <input type="text" id="fname" name="fname"><br>
-        </div>
-        <div>
-          <label for="Sname">Subject:</label><br>
-          <input type="text" id="lname" name="lname"><br>
-        </div>
-        <div>
-          <label for="Sname">Message:</label><br>
-          <textarea name="message" cols="30" rows="10"></textarea>
-        </div>
-        <input type="submit" id="form-submit-button" value="Submit">
-      </form>
-    </div> -->
+    
 
     <div class="container" id="about-me-section">
       <article class="about-me-container">
@@ -61,7 +63,7 @@
           <h1>Hi there, <br> I'm Pat.</h1>
           <p>I am recent bachelor's degree recipient in computer engineering.</p> 
           <p>Enthusiastic aspiring frontend developer eager to contribute to team success through hard work, attention to detail, and excellent organizational skills.</p>
-            <div class="skills">
+            <div class="skills-content">
               <h1>Skills</h1>
               <p>HTML5/CSS</p>
             </div>
@@ -74,15 +76,10 @@
       <h1>Projects</h1>
         <article class="project-content-main">
           <div class="project-content-secondary">
-            <h2>Project1</h2>
-            <a href="#"><img src="imag/thegallery.png" alt=""></a>
-            
+            <h2>THE GALLERY</h2>
+            <a target="_blank" href="http://explorethegallery.com/"><img class="project-image" src="imag/thegallery.png" alt="thegallery"></a>
           </div>
-          <div class="project-content-secondary">
-            <h2>Project2</h2>
-            <a href="#"><img src="imag/thegallery.png" alt=""></a>
-      
-          </div>
+          
           
         </article>
     </div>
