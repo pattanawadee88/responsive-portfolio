@@ -53,6 +53,10 @@ form{
 textarea{
     margin-bottom: 1em;
 }
+span{
+    background-color: whitesmoke;
+    padding: 1em;
+}
 /* class elements*/
 .icon-image:hover{
     transform: scale(1.2,1.2);
@@ -92,8 +96,16 @@ textarea{
     display: flex;
     align-items: center;
 }
-.skills-content{
+.skills-container{
     text-align: right;
+}
+.skills-list{
+    display: flex;
+    justify-content: flex-end;
+}
+.skills-item{
+    margin-left: 2em;
+    
 }
 .pop-up-contact-form{
     background-color: white;
@@ -166,7 +178,14 @@ textarea{
     .project-content-main{
         flex-direction: column;  
         margin: 2em;
-    }  
+    } 
+    .skills-list{
+        flex-direction: column;        
+    } 
+    .skills-item{
+        margin-bottom: 3em;
+    }
+    
 }
 
 
@@ -193,6 +212,9 @@ h1{
 p{
     font-size: 1rem;
 }
+.text-larger{
+    font-size: 4rem;
+}
 @media (max-width:450px){
     p{
         font-size: 1rem;
@@ -202,6 +224,9 @@ p{
     }
     .icon-image{
         width: 10%;
+    }
+    .text-larger{
+        font-size: 3rem;
     }
     
 }
